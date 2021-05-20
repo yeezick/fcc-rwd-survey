@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FCC Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="content-body">
+    <h1 id="title">Hello World!</h1>
+
+    <p id="description">Calling all junior developers! <br /> As another self-teacher, I feel your pain and hate to think you're going through it alone! This form is designed to give me a little bit of info about you before we connect!</p>
+
+
+<form id="survey-form" class="" action="index.html" method="post">
+
+  <!-- name -->
+  <div>
+  <label for="" id="name-label">Name</label>
+  <input type="text" id="name" name="name" value="" placeholder="Enter your full name">
+</div>
+
+  <!-- email -->
+  <div>
+  <label for="" id="email-label">Email</label>
+  <input type="email" name="email" value="" placeholder="Email goes here">
+</div>
+
+  <!-- number with min-max-->
+  <div>
+  <label for="" id="number-label"></label>
+  <input type="number" name="number" value="" placeholder="How old are you?">
+</div>
+
+  <!-- dropdown -->
+  <div>
+  <label for="downDrop">How long have you been studying?</label>
+<select id="dropdown" class="" name="downDrop">
+  <option value="0-6 months">0 - 6 months</option>
+  <option value="6-12 months">6 - 12 months</option>
+  <option value="1 year+">Over a year!</option>
+</select>
+</div>
+
+<!-- radio buttons -->
+<div>
+<label class="label-header" for="radio">Are you ready for the next step?</label>
+<br />
+  <input type="radio" name="stillLearning" value="learning">
+  <label for="stillLearning">No, I feel like I'm still missing a lot</label>
+  <br />
+  <input type="radio" name="needPractice" value="practicing">
+  <label for="needPractice">I think I understand what I've learned but I'd feel a lot better
+  if I was able to actually use them.</label>
+<br />
+  <input type="radio" name="readyToHire" value="hiring">
+  <label for="readyToHire">I have a portfolio and I'm ready to work!</label>
+</div>
+
+<!-- checkbox -->
+<div>
+<label for="checkboxes">Are you ready to succed?</label><br />
+
+<input type="checkbox" name="checkboxes" value="">
+<label for="checkboxes"></label>I've put time aside to grind.<br />
+<input type="checkbox" name="checkboxes" value="">
+<label for="checkboxes"></label>I'm a sponge with no limits!<br />
+</div>
+
+<!-- text area -->
+<div>
+  <label for="areaText">Tell me about yourself</label>
+  <br>
+  <input type="textArea" name="areaText" value="" placeholder="I want success because..">
+</div>
+
+  <button id="submit" type="submit" name="button">Submit</button>
+
+</form>
+</div>
+
+  </body>
+</html>

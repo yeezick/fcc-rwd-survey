@@ -1,0 +1,23 @@
+/* html elements */
+body {
+  background-color: orange;
+  margin: 0 25%;
+  text-align:center;
+}
+div{
+  padding: 1rem;
+}
+form {
+  background-color: white;
+  align-self: center;
+  /* width: 95%; */
+  text-align:left;
+  padding: 1rem;
+}
+
+
+/* classes */
+.content-body {
+  background-color: gray;
+  margin: 2rem auto;
+}
