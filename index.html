@@ -1,84 +1,125 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>FCC Survey</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <div class="content-body">
-    <h1 id="title">Hello World!</h1>
+      <h1 id="title">Hello World!</h1>
 
-    <p id="description">Calling all junior developers! <br /> As another self-teacher, I feel your pain and hate to think you're going through it alone! This form is designed to give me a little bit of info about you before we connect!</p>
+      <p id="description">
+        Calling all junior developers! <br />
+        As another self-teacher, I feel your pain and hate to think you're going
+        through it alone! This form is designed to give me a little bit of info
+        about you before we connect!
+      </p>
 
+      <form id="survey-form" class="" action="index.html" method="post">
+        <!-- name -->
+        <div>
+          <label class="mainLabel" for="" id="name-label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value=""
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
 
-<form id="survey-form" class="" action="index.html" method="post">
+        <!-- email -->
+        <div>
+          <label class="mainLabel" for="" id="email-label">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email goes here"
+            required
+          />
+        </div>
 
-  <!-- name -->
-  <div>
-  <label for="" id="name-label">Name</label>
-  <input type="text" id="name" name="name" value="" placeholder="Enter your full name">
-</div>
+        <!-- number with min-max-->
+        <div>
+          <label class="mainLabel" for="number" id="number-label"
+            >How old are you?</label
+          >
+          <input
+            type="number"
+            id="number"
+            name="number"
+            value=""
+            placeholder="Age"
+            min="14"
+            max="1,000"
+          />
+        </div>
 
-  <!-- email -->
-  <div>
-  <label for="" id="email-label">Email</label>
-  <input type="email" name="email" value="" placeholder="Email goes here">
-</div>
+        <!-- dropdown -->
+        <div>
+          <label class="mainLabel" for="downDrop"
+            >How long have you been studying?</label
+          >
+          <select id="dropdown" class="" name="downDrop">
+            <option value="0-6 months">0 - 6 months</option>
+            <option value="6-12 months">6 - 12 months</option>
+            <option value="1 year+">Over a year!</option>
+          </select>
+        </div>
 
-  <!-- number with min-max-->
-  <div>
-  <label for="" id="number-label"></label>
-  <input type="number" name="number" value="" placeholder="How old are you?">
-</div>
+        <!-- radio buttons -->
+        <div>
+          <label class="mainLabel" for="radio"
+            >Are you ready for the next step?</label
+          >
+          <br />
+          <input type="radio" name="skill-level" value="learning" />
+          <label for="stillLearning"
+            >No, I feel like I'm still missing a lot</label
+          >
+          <br />
+          <input type="radio" name="skill-level" value="practicing" />
+          <label for="needPractice"
+            >I think I understand what I've learned but I'd feel a lot better if
+            I was able to actually use them.</label
+          >
+          <br />
+          <input type="radio" name="skill-level" value="hiring" />
+          <label for="readyToHire"
+            >I have a portfolio and I'm ready to work!</label
+          >
+        </div>
 
-  <!-- dropdown -->
-  <div>
-  <label for="downDrop">How long have you been studying?</label>
-<select id="dropdown" class="" name="downDrop">
-  <option value="0-6 months">0 - 6 months</option>
-  <option value="6-12 months">6 - 12 months</option>
-  <option value="1 year+">Over a year!</option>
-</select>
-</div>
+        <!-- checkbox -->
+        <div>
+          <label class="mainLabel" for="checkboxes"
+            >Are you ready to succeed?</label
+          ><br />
 
-<!-- radio buttons -->
-<div>
-<label class="label-header" for="radio">Are you ready for the next step?</label>
-<br />
-  <input type="radio" name="stillLearning" value="learning">
-  <label for="stillLearning">No, I feel like I'm still missing a lot</label>
-  <br />
-  <input type="radio" name="needPractice" value="practicing">
-  <label for="needPractice">I think I understand what I've learned but I'd feel a lot better
-  if I was able to actually use them.</label>
-<br />
-  <input type="radio" name="readyToHire" value="hiring">
-  <label for="readyToHire">I have a portfolio and I'm ready to work!</label>
-</div>
+          <input type="checkbox" name="checkboxes" value="Very!" />
+          <label for="checkboxes">I've put time aside to grind.</label><br />
+          <input type="checkbox" name="checkboxes" value="Getting there!" />
+          <label for="checkboxes">I'm a sponge with no limits!</label><br />
+        </div>
 
-<!-- checkbox -->
-<div>
-<label for="checkboxes">Are you ready to succed?</label><br />
+        <!-- text area -->
+        <div>
+          <label class="mainLabel" for="areaText">Tell me about yourself</label>
+          <br />
+          <textarea
+            name="areaText"
+            value=""
+            placeholder="I want success because.."
+          >
+          </textarea>
+        </div>
 
-<input type="checkbox" name="checkboxes" value="">
-<label for="checkboxes"></label>I've put time aside to grind.<br />
-<input type="checkbox" name="checkboxes" value="">
-<label for="checkboxes"></label>I'm a sponge with no limits!<br />
-</div>
-
-<!-- text area -->
-<div>
-  <label for="areaText">Tell me about yourself</label>
-  <br>
-  <input type="textArea" name="areaText" value="" placeholder="I want success because..">
-</div>
-
-  <button id="submit" type="submit" name="button">Submit</button>
-
-</form>
-</div>
-
+        <button id="submit" type="submit" name="button">Submit</button>
+      </form>
+    </div>
   </body>
 </html>

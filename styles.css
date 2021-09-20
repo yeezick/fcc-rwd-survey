@@ -21,3 +21,7 @@ form {
   background-color: gray;
   margin: 2rem auto;
 }
+
+.mainLabel {
+  margin: 0 1.1rem 2rem 0;
+}
